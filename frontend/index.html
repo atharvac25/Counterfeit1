@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/frontend/styles.css">
+    <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/web3/1.8.2/web3.min.js'></script>
+</head>
+<body>
+     <!-- <img class="bcimg"src="/frontend/images/background-img.png"> -->
+    <button onclick="connectMetamask()">CONNECT TO METAMASK</button>
+    <p id="accountArea"></p>
+    <button onclick="connectContract()">CONNECT TO CONTRACT</button>
+    <p id="contractArea"></p>
+    <h1>Manufacturer Drug Details</h1>
+    <form>
+       <p id="define">Enter Drug Name: <input id="name" type="text" placeholder="-name-"></p>
+       <p id="define">Enter Drug Info: <input id="info" type="text" placeholder="-info-"></p>
+       
+   </form>
+
+   <button id="add" type="Submit" onclick="addDrug()">Add Drug</button><br>
+       <p id="drugAdded"></p>
+    <button id="Show" type="submit" onclick="readManufacturerDrugsList()">Show Manufactured Drug List</button>
+       <div id="drugIdList"></div>
+      
+    <!-- <button id="Show" type="submit" onclick="window.location.href='manufacturerdrugs.html'">
+        Show Manufactured Drug List
+    </button> -->
+    <div id="drugIdList"></div>  
+
+    <table id="drugIds-table">
+        <thead>
+          <tr>
+            <th>Drug IDs</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+  <form action="#">
+      <label for="drugAddr">Address:</label>
+      <input type="text" id="drugAddr" name="drugAddr"><br><br>
+      <!-- <input type="button" value="See Drug Data" onclick="drugData();"> -->
+      
+  </form>
+  <button onclick="drugData();">See drug data</button>
+      <!-- <div id="drugData"></div> -->
+
+      <div id="drugDataContainer">
+          <h3>Drug Data</h3>
+          <div id="drugData"></div>
+      </div>
+
+
+
+      <script src="/app.js"></script>
+</body>
+</html>

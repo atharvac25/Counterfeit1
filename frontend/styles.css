@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;;
+}
+
+body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+    overflow: visible;
+    /* background-image: url(/frontend/images/background-img.png); */
+    background-color: rgb(220, 188, 195);
+}
+
+form{
+
+    margin-top: 50px;
+    text-align: center;
+    
+}
+
+input{
+    border-radius: 20px;
+    display: block;
+    width: 350px;
+    height:40px;
+    margin: 20px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-bottom: 1px solid black;
+    text-align: center;
+    
+}
+
+
+
+button{
+    height: 40px;
+    width: 350px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+    background-color: #378fbf;
+    color: white;
+    margin: 15px;
+
+}
+
+button:hover{
+    
+    background-color: #0f2937;
+
+}
+
+#drugidlist{
+    height: 500px;
+    width: 80%;
+}
+
+#drugData{
+
+    word-wrap: break-word;
+    width: 500px;
+    color: beige;
+}
+
+/* drugdata container */
+
+
+#drugDataContainer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#drugDataContainer h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#drugData {
+    background-color: white;
+    padding: 20px;
+    color:black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #888888;
+    text-align: left;
+}
+
+/* page-two */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #ddd;
+  }
+  
+  
+  
+  
+  
+  
